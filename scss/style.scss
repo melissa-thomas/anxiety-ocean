@@ -7,8 +7,36 @@ html, body {
 }
 
 body {
-  background: #015871;
+  background: #fff;
+  color: #0c4545;
   overflow: hidden;
+  font-family: 'Palanquin', sans-serif;
+  font-weight: 500;
+}
+
+h1 {
+  color: white;
+  font-family: 'Palanquin', sans-serif;
+  font-size: 50px;
+  font-weight: 700;
+}
+
+h2 {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 22px;
+  font-style: italic;
+}
+
+main.content {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  max-width: 700px;
+  z-index: 100;
+}
+
+ul {
+  background-color: white;
 }
 
 .ocean { 
@@ -26,27 +54,45 @@ body {
   transform: translate3d(0, 0, 0);
 
   &.-one {
-    animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) -.125s infinite, swell 6s ease -1.25s infinite;
+    animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) -.125s infinite, swell 11s ease -1.25s infinite;
     background: url(../img/wave-1.svg) repeat-x;
-    opacity: 1;
-    top: -250px;
+    top: -500px;
     z-index: 1;
   }
 
   &.-two {
-    animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) -.125s infinite, swell 7s ease -1.25s infinite;
+    animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) -.125s infinite, swell 10s ease -1.25s infinite;
     background: url(../img/wave-2.svg) repeat-x;
-    top: -200px;
-    opacity: .7;
+    top: -400px;
     z-index: 2;
   }
 
   &.-three {
-    animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) -.125s infinite, swell 8s ease -1.25s infinite;
+    animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) -.125s infinite, swell 9s ease -1.25s infinite;
     background: url(../img/wave-3.svg) repeat-x;
-    opacity: .5;
-    top: -150px;
+    top: -300px;
     z-index: 3;
+  }
+
+  &.-four {
+    animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) -.125s infinite, swell 8s ease -1.25s infinite;
+    background: url(../img/wave-4.svg) repeat-x;
+    top: -120px;
+    z-index: 4;
+  }
+
+  &.-five {
+    animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) -.125s infinite, swell 7s ease -1.25s infinite;
+    background: url(../img/wave-5.svg) repeat-x;
+    top: 50px;
+    z-index: 5;
+  }
+
+  &.-six {
+    animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) -.125s infinite, swell 6s ease -1.25s infinite;
+    background: url(../img/wave-6.svg) repeat-x;
+    top: 200px;
+    z-index: 6;
   }
 }
 
