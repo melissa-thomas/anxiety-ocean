@@ -31,57 +31,13 @@ main.content {
 ul {
   background-color: white; }
 
-.ocean {
-  height: 50%;
-  width: 100%;
-  position: absolute;
-  bottom: 0;
-  left: 0; }
+.box {
+  width: calc(100% - 5em);
+  display: block;
+  min-height: 100px;
+  margin: 1em auto; }
 
-.wave {
-  height: 110%;
-  position: absolute;
-  width: 6400px;
-  transform: translate3d(0, 0, 0); }
-  .wave.-one {
-    animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) -0.125s infinite, swell 11s ease -1.25s infinite;
-    background: url(../img/wave-1.svg) repeat-x;
-    top: -500px;
-    z-index: 1; }
-  .wave.-two {
-    animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) -0.125s infinite, swell 10s ease -1.25s infinite;
-    background: url(../img/wave-2.svg) repeat-x;
-    top: -400px;
-    z-index: 2; }
-  .wave.-three {
-    animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) -0.125s infinite, swell 9s ease -1.25s infinite;
-    background: url(../img/wave-3.svg) repeat-x;
-    top: -300px;
-    z-index: 3; }
-  .wave.-four {
-    animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) -0.125s infinite, swell 8s ease -1.25s infinite;
-    background: url(../img/wave-4.svg) repeat-x;
-    top: -120px;
-    z-index: 4; }
-  .wave.-five {
-    animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) -0.125s infinite, swell 7s ease -1.25s infinite;
-    background: url(../img/wave-5.svg) repeat-x;
-    top: 50px;
-    z-index: 5; }
-  .wave.-six {
-    animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) -0.125s infinite, swell 6s ease -1.25s infinite;
-    background: url(../img/wave-6.svg) repeat-x;
-    top: 200px;
-    z-index: 6; }
-
-@keyframes wave {
-  0% {
-    margin-left: 0; }
-  100% {
-    margin-left: -1252px; } }
-
-@keyframes swell {
-  0%, 100% {
-    transform: translate3d(0, -65px, 0); }
-  50% {
-    transform: translate3d(0, 5px, 0); } }
+.box img {
+  max-width: 100%;
+  opacity: 1;
+  transition: opacity 200ms ease; }
