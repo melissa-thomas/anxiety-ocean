@@ -1,7 +1,5 @@
 @import 'partials/variables';
 
-/* best at 1500px or less */
-
 html, body { 
   height: 100%; 
 }
@@ -39,16 +37,47 @@ ul {
   background-color: white;
 }
 
-// new photo box stuff
+// bg experiments
 
-.box {
-  width:calc(100% - 5em);
-  display:block;
-  min-height:100px;
-  margin:1em auto;
+.fadein img { 
+    opacity:0; 
+    animation-name: fade; 
+    animation-duration: 9s; 
+    animation-iteration-count: infinite; 
+    position:absolute; 
+    left:0; 
+    right:0;
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+    z-index: 0;
 }
-.box img{
-  max-width:100%;
-  opacity:1;
-  transition:opacity 200ms ease;
+
+.fadein img:nth-child(1) { animation-delay: 0s; }
+.fadein img:nth-child(2) { animation-delay: 3s; }
+.fadein img:nth-child(3) { animation-delay: 6s; }
+.fadein img:nth-child(4) { animation-delay: 9s; }
+.fadein img:nth-child(5) { animation-delay: 12s; }
+.fadein img:nth-child(6) { animation-delay: 15s; }
+.fadein img:nth-child(7) { animation-delay: 18s; }
+.fadein img:nth-child(8) { animation-delay: 21s; }
+.fadein img:nth-child(9) { animation-delay: 24s; }
+.fadein img:nth-child(10) { animation-delay: 27s; }
+.fadein img:nth-child(11) { animation-delay: 30s; }
+.fadein img:nth-child(12) { animation-delay: 33s; }
+.fadein img:nth-child(13) { animation-delay: 36s; }
+.fadein img:nth-child(14) { animation-delay: 39s; }
+.fadein img:nth-child(15) { animation-delay: 42s; }
+.fadein img:nth-child(16) { animation-delay: 45s; }
+.fadein img:nth-child(17) { animation-delay: 48s; }
+.fadein img:nth-child(18) { animation-delay: 51s; }
+.fadein img:nth-child(19) { animation-delay: 54s; }
+.fadein img:nth-child(20) { animation-delay: 57s; }
+
+@keyframes fade {
+  0%   { opacity: 0; }
+  11.11%   { opacity: 1; }
+  33.33%  { opacity: 1; }
+  44.44%  { opacity: 0; }
+  100% { opacity: 0; }
 }
