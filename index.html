@@ -2,12 +2,13 @@
 	<head>
 		<title>Anxiety Ocean</title>
 		<link rel="stylesheet" href="css/style.css">
-		<link href="https://fonts.googleapis.com/css?family=PT+Sans|Palanquin:500,700" rel="stylesheet"> 
+		<link href="https://fonts.googleapis.com/css?family=Baloo|Varela+Round" rel="stylesheet"> 
 	</head>
 </html>
 <body>
   <div class="fadein">
   	<img src="img/abdolazim.jpg" alt="">
+  	<!--
   	<img src="img/anna.jpg" alt="">
   	<img src="img/asoggetti.jpg" alt="">
   	<img src="img/ben.jpg" alt="">
@@ -26,12 +27,15 @@
   	<img src="img/ian.jpg" alt="">
   	<img src="img/jay.jpg" alt="">
   	<img src="img/jorge.jpg" alt="">
+  -->
   </div>
-  <div class="wrapper">
-  	<main class="content">
+  <div class="content">
+	<header>
 		<h1>Anxiety Self-Check</h1>
-		<h2>Are you feeling instense anxiety? First, know you're going to be okay. Then try checking off some items on this list.</h2>
-  		<ul>
+	</header>
+	<main>
+		<h2>Are you feeling instense anxiety? You're going to be okay. When you can, try checking off some items on this list.</h2>
+		<ul>
 			<li>
 				<span>Is your breathing shallow?</span>
 				<input type="checkbox" id="item-1" name="item-1" />
@@ -65,14 +69,38 @@
 					<polyline points="1,5 6,9 14,1" />
 				</svg>
 			</li>
+			<!-- new attempt -->
+			<li>
+				<label>
+					<input class="item" type="checkbox" checked/>
+					<div class="label__text">
+						<p class="is-bold">Is your breathing shallow?</p>
+						<p>Try taking a deep breath through your nose, and then slowly exhaling through your mouth.</p>
+					</div>
+				</label>
+			</li>
+			<li>
+				<label>
+					<input class="item" type="checkbox" />
+					<p class="is-bold">Are your shoulders high or tense?</p>
+					<p>Try slowly lowering them as you exhale.</p>
+				</label>
+			</li>
+			<li>
+				<label>
+					<input class="item" type="checkbox" />
+					<p class="is-bold">Is your jaw clenched?</p>
+					<p>Try opening your mouth into a wide, relaxed yawn.</p>
+				</label>
+			</li>
+			<li>
+				<label>
+					<input class="item" type="checkbox" />
+					<p class="is-bold">Are you present in the moment?</p>
+					<p>Try naming the objects you can see and the sounds you can hear.</p>
+				</label>
+			</li>
 		</ul>
-  	</main>
-	<div class="wave -one"></div>
-	<div class="wave -two"></div>
-	<div class="wave -three"></div>
-	<div class="wave -four"></div>
-	<div class="wave -five"></div>
-	<div class="wave -six"></div>
+	</main>
   </div>
-  <script src="js/main.js"></script>
 </body>
