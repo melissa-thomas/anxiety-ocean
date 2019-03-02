@@ -3,77 +3,40 @@
 		<title>Anxiety Ocean</title>
 		<link rel="stylesheet" href="css/style.css">
 		<link href="https://fonts.googleapis.com/css?family=Baloo|Varela+Round" rel="stylesheet"> 
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 	</head>
+	<script type="text/javascript">
+		var imageURLs = [
+       		"img/abdolazim.jpg", "img/anna.jpg", "img/asoggetti.jpg", "img/ben.jpg", "img/bence.jpg", "img/camille.jpg", "img/charlota.jpg", "img/charlota.jpg", "img/chris.jpg", "img/daniel.jpg", "img/dji.jpg", "img/dominic.jpg", "img/eberhard.jpg", "img/ekaterina.jpg", "img/emmanuel.jpg", "img/fog.jpg", "img/hussain.jpg", "img/ian.jpg", "img/jay.jpg", "img/jorge.jpg"  
+  		];
+	  function getImageTag() {
+	    var img = '<img src=\"';
+	    var randomIndex = Math.floor(Math.random() * imageURLs.length);
+	    img += imageURLs[randomIndex];
+	    img += '\" alt=\"Some alt text\"/>';
+	    return img;
+	  }
+	</script>
 </html>
 <body>
-  <div class="fadein">
-  	<img src="img/abdolazim.jpg" alt="">
-  	<!--
-  	<img src="img/anna.jpg" alt="">
-  	<img src="img/asoggetti.jpg" alt="">
-  	<img src="img/ben.jpg" alt="">
-  	<img src="img/bence.jpg" alt="">
-  	<img src="img/camille.jpg" alt="">
-  	<img src="img/charlota.jpg" alt="">
-  	<img src="img/chris.jpg" alt="">
-  	<img src="img/daniel.jpg" alt="">
-  	<img src="img/dji.jpg" alt="">
-  	<img src="img/dominic.jpg" alt="">
-  	<img src="img/eberhard.jpg" alt="">
-  	<img src="img/ekaterina.jpg" alt="">
-  	<img src="img/emmanuel.jpg" alt="">
-  	<img src="img/fog.jpg" alt="">
-  	<img src="img/hussain.jpg" alt="">
-  	<img src="img/ian.jpg" alt="">
-  	<img src="img/jay.jpg" alt="">
-  	<img src="img/jorge.jpg" alt="">
-  -->
+  <div class="background">
+  	<script type="text/javascript">
+  		document.write(getImageTag());
+	</script>
   </div>
   <div class="content">
 	<header>
 		<h1>Anxiety Self-Check</h1>
 	</header>
 	<main>
-		<h2>Are you feeling instense anxiety? You're going to be okay. When you can, try checking off some items on this list.</h2>
+		<h2><p>Are you feeling instense anxiety? Know that you're going to be okay.</p>
+			<p>When you can, try checking off some items on this list.</p>
+		</h2>
 		<ul>
 			<li>
-				<span>Is your breathing shallow?</span>
-				<input type="checkbox" id="item-1" name="item-1" />
-				<label for="item-1" class="text">Try taking a deep breath through your nose, and then slowly exhaling it out out of your mouth.</label>
-				<label for="item-1" class="button"></label>
-				<svg width="15px" height="10px" class="checkmark">
-					<polyline points="1,5 6,9 14,1" />
-				</svg>
-			</li>
-			<li>
-				<input type="checkbox" id="item-2" name="item-2" />
-				<label for="item-2" class="text">Complete first task</label>
-				<label for="item-2" class="button"></label>
-				<svg width="15px" height="10px" class="checkmark">
-					<polyline points="1,5 6,9 14,1" />
-				</svg>
-			</li>
-			<li>
-				<input type="checkbox" id="item-3" name="item-3" />
-				<label for="item-3" class="text">Write some CSS code</label>
-				<label for="item-3" class="button"></label>
-				<svg width="15px" height="10px" class="checkmark">
-					<polyline points="1,5 6,9 14,1" />
-				</svg>
-			</li>
-			<li>
-				<input type="checkbox" id="item-4" name="item-4" />
-				<label for="item-4" class="text">Amaze the world</label>
-				<label for="item-4" class="button"></label>
-				<svg width="15px" height="10px" class="checkmark">
-					<polyline points="1,5 6,9 14,1" />
-				</svg>
-			</li>
-			<!-- new attempt -->
-			<li>
 				<label>
-					<input class="item" type="checkbox" checked/>
-					<div class="label__text">
+					<input class="item" type="checkbox" />
+					<div class="label__text icon">
 						<p class="is-bold">Is your breathing shallow?</p>
 						<p>Try taking a deep breath through your nose, and then slowly exhaling through your mouth.</p>
 					</div>
@@ -82,25 +45,34 @@
 			<li>
 				<label>
 					<input class="item" type="checkbox" />
-					<p class="is-bold">Are your shoulders high or tense?</p>
-					<p>Try slowly lowering them as you exhale.</p>
+					<div class="label__text icon">
+						<p class="is-bold">Are your shoulders high or tense?</p>
+						<p>Try slowly lowering them as you exhale.</p>
+					</div>
 				</label>
 			</li>
 			<li>
 				<label>
 					<input class="item" type="checkbox" />
-					<p class="is-bold">Is your jaw clenched?</p>
-					<p>Try opening your mouth into a wide, relaxed yawn.</p>
+					<div class="label__text icon">
+						<p class="is-bold">Is your jaw clenched?</p>
+						<p>Try opening your mouth into a wide, relaxed yawn.</p>
+					</div>
 				</label>
 			</li>
 			<li>
 				<label>
 					<input class="item" type="checkbox" />
-					<p class="is-bold">Are you present in the moment?</p>
-					<p>Try naming the objects you can see and the sounds you can hear.</p>
+					<div class="label__text icon">
+						<p class="is-bold">Are you present in the moment?</p>
+						<p>Try naming the objects you can see and the sounds you can hear.</p>
+					</div>
 				</label>
 			</li>
 		</ul>
 	</main>
+	<footer>
+		<section>Tip: If you're having trouble focusing, try refreshing the page.</section>
+	</footer>
   </div>
 </body>
