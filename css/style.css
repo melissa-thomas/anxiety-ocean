@@ -26,12 +26,15 @@ h1 {
 
 h2 {
   background: #fff;
+  box-shadow: 0px 0px 89px -12px rgba(0, 0, 0, 0.75);
   font-family: "Varela Round", sans-serif;
   font-size: 20px;
   opacity: .6;
   padding: 10px 20px 10px 65px;
+  position: relative;
   margin: 0;
-  text-transform: lowercase; }
+  text-transform: lowercase;
+  z-index: 2; }
   @media screen and (max-width: 800px) {
     h2 {
       font-size: 18px;
@@ -50,23 +53,23 @@ h2 {
 
 .is-bold {
   font-weight: bold; }
+  .is-bold:first-of-type {
+    margin-bottom: 8px; }
 
-.background img {
-  position: absolute;
-  left: 0;
+#beachVideo {
+  position: fixed;
   right: 0;
-  height: 100%;
-  margin: 0;
-  width: 100%;
-  object-fit: cover;
-  top: 0;
-  z-index: 0; }
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%; }
 
 header {
   background-color: black;
+  box-shadow: 0px 0px 89px -12px rgba(0, 0, 0, 0.75);
   height: 235px;
   opacity: .7;
   margin-top: 40px;
+  position: relative;
   text-align: right; }
   @media screen and (max-width: 800px) {
     header {
@@ -78,6 +81,7 @@ header {
   grid-template-columns: 1fr 4fr;
   position: relative;
   margin: 5% 18% auto 18%;
+  opacity: .9;
   z-index: 1; }
   @media screen and (max-width: 1000px) {
     .content {
@@ -88,9 +92,12 @@ header {
 
 ul {
   background-color: white;
+  box-shadow: 0px 20px 89px -12px rgba(0, 0, 0, 0.75);
   list-style-type: none;
   padding: 30px 20px 40px 70px;
-  margin: 0; }
+  position: relative;
+  margin: 0;
+  z-index: 3; }
   @media screen and (max-width: 800px) {
     ul {
       padding: 20px 20px 20px 65px; } }
@@ -110,7 +117,7 @@ ul {
         -webkit-font-smoothing: antialiased; }
       ul label input:checked ~ .label__text:before {
         content: "\f00c";
-        font-family: FontAwesome;
+        font-family: "Font Awesome 5 Free";
         font-weight: 900;
         font-size: 14px;
         text-indent: 0;
@@ -150,12 +157,3 @@ ul {
         transition: all 0.15s cubic-bezier(0.8, 0.1, 0.1, 0.8); }
       ul label .label__text p {
         margin: 0; }
-
-aside {
-  color: #fff;
-  font-size: 14px;
-  font-style: italic;
-  opacity: .7;
-  padding: 15px 0 5px 20px;
-  text-align: right;
-  text-transform: lowercase; }
