@@ -26,12 +26,15 @@ h1 {
 
 h2 {
   background: #fff;
+  box-shadow: 0px 0px 89px -12px rgba(0, 0, 0, 0.75);
   font-family: "Varela Round", sans-serif;
   font-size: 20px;
   opacity: .6;
   padding: 10px 20px 10px 65px;
+  position: relative;
   margin: 0;
-  text-transform: lowercase; }
+  text-transform: lowercase;
+  z-index: 2; }
   @media screen and (max-width: 800px) {
     h2 {
       font-size: 18px;
@@ -60,9 +63,11 @@ h2 {
 
 header {
   background-color: black;
+  box-shadow: 0px 0px 89px -12px rgba(0, 0, 0, 0.75);
   height: 235px;
   opacity: .7;
   margin-top: 40px;
+  position: relative;
   text-align: right; }
   @media screen and (max-width: 800px) {
     header {
@@ -85,9 +90,12 @@ header {
 
 ul {
   background-color: white;
+  box-shadow: 0px 20px 89px -12px rgba(0, 0, 0, 0.75);
   list-style-type: none;
   padding: 30px 20px 40px 70px;
-  margin: 0; }
+  position: relative;
+  margin: 0;
+  z-index: 3; }
   @media screen and (max-width: 800px) {
     ul {
       padding: 20px 20px 20px 65px; } }
