@@ -53,6 +53,8 @@ h2 {
 
 .is-bold {
   font-weight: bold; }
+  .is-bold:first-of-type {
+    margin-bottom: 8px; }
 
 #beachVideo {
   position: fixed;
@@ -115,7 +117,7 @@ ul {
         -webkit-font-smoothing: antialiased; }
       ul label input:checked ~ .label__text:before {
         content: "\f00c";
-        font-family: FontAwesome;
+        font-family: "Font Awesome 5 Free";
         font-weight: 900;
         font-size: 14px;
         text-indent: 0;

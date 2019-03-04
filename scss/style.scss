@@ -75,6 +75,10 @@ h2 {
 
 .is-bold {
   font-weight: bold;
+
+  &:first-of-type {
+    margin-bottom: 8px;
+  }
 }
 
 // layout
@@ -152,7 +156,7 @@ ul {
 
       &:checked ~ .label__text:before {
         content: "\f00c";
-        font-family: FontAwesome;
+        font-family: "Font Awesome 5 Free";
         font-weight: 900;
         font-size: 14px;
         text-indent: 0;
