@@ -76,16 +76,12 @@ h2 {
 
 // layout
 
-.background img {
-  position:absolute; 
-  left:0; 
-  right:0;
-  height: 100%;
-  margin: 0;
-  width: 100%;
-  object-fit: cover;
-  top: 0;
-  z-index: 0;
+#beachVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
 }
 
 header {
@@ -106,6 +102,7 @@ header {
   grid-template-columns: 1fr 4fr;
   position: relative;
   margin: 5% 18% auto 18%;
+  opacity: .9;
   z-index: 1;
 
   @media screen and (max-width: 1000px) {
@@ -202,14 +199,4 @@ ul {
       }
     }
   }
-}
-
-aside {
-  color: $light-white;
-  font-size: 14px;
-  font-style: italic;
-  opacity: .7;
-  padding: 15px 0 5px 20px;
-  text-align: right;
-  text-transform: lowercase;
 }

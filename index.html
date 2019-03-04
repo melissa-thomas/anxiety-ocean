@@ -8,25 +8,11 @@
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 		<link rel="icon" type="image/png" href="img/palm.png" sizes="16x16">
 	</head>
-	<script type="text/javascript">
-		var imageURLs = [
-       		"img/abdolazim.jpg", "img/anna.jpg", "img/asoggetti.jpg", "img/ben.jpg", "img/bence.jpg", "img/camille.jpg", "img/charlota.jpg", "img/charlota.jpg", "img/chris.jpg", "img/daniel.jpg", "img/dji.jpg", "img/dominic.jpg", "img/eberhard.jpg", "img/ekaterina.jpg", "img/emmanuel.jpg", "img/fog.jpg", "img/hussain.jpg", "img/ian.jpg", "img/jay.jpg", "img/jorge.jpg"  
-  		];
-	  function getImageTag() {
-	    var img = '<img src=\"';
-	    var randomIndex = Math.floor(Math.random() * imageURLs.length);
-	    img += imageURLs[randomIndex];
-	    img += '\" alt=\"serene landscape\"/>';
-	    return img;
-	  }
-	</script>
 </html>
 <body>
-  <div class="background">
-  	<script type="text/javascript">
-  		document.write(getImageTag());
-	</script>
-  </div>
+  <video autoplay muted loop id="beachVideo">
+  	<source src="img/Beach.mp4" type="video/mp4">
+  </video>
   <div class="content">
 	<header>
 		<h1>Anxiety Self-Check</h1>
@@ -82,7 +68,7 @@
 				</label>
 			</li>
 		</ul>
-		<aside>Tip: If you're having trouble focusing, try refreshing the page</aside>
+
 	</main>
   </div>
 </body>

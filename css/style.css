@@ -51,16 +51,12 @@ h2 {
 .is-bold {
   font-weight: bold; }
 
-.background img {
-  position: absolute;
-  left: 0;
+#beachVideo {
+  position: fixed;
   right: 0;
-  height: 100%;
-  margin: 0;
-  width: 100%;
-  object-fit: cover;
-  top: 0;
-  z-index: 0; }
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%; }
 
 header {
   background-color: black;
@@ -78,6 +74,7 @@ header {
   grid-template-columns: 1fr 4fr;
   position: relative;
   margin: 5% 18% auto 18%;
+  opacity: .9;
   z-index: 1; }
   @media screen and (max-width: 1000px) {
     .content {
@@ -150,12 +147,3 @@ ul {
         transition: all 0.15s cubic-bezier(0.8, 0.1, 0.1, 0.8); }
       ul label .label__text p {
         margin: 0; }
-
-aside {
-  color: #fff;
-  font-size: 14px;
-  font-style: italic;
-  opacity: .7;
-  padding: 15px 0 5px 20px;
-  text-align: right;
-  text-transform: lowercase; }
