@@ -19,8 +19,17 @@ h1 {
   font-size: 40px;
   line-height: 1.2;
   padding: 20px;
-  text-align: right;
   text-transform: lowercase;
+
+  @media screen and (max-width: 800px) {
+    font-size: 30px;
+    padding: 5px 0 5px 65px;
+  }
+
+  @media screen and (max-width: 600px) {
+    font-size: 26px;
+    padding: 5px 10px 5px 20px;
+  }
 }
 
 h2 {
@@ -31,6 +40,15 @@ h2 {
   padding: 10px 20px 10px 65px;
   margin: 0;
   text-transform: lowercase;
+
+  @media screen and (max-width: 800px) {
+    font-size: 18px;
+    padding: 5px 20px 5px 65px;
+  }
+
+  @media screen and (max-width: 600px) {
+    padding: 5px 10px 5px 20px;
+  }
 
   p {
     
@@ -74,6 +92,12 @@ header {
   height: 235px;
   opacity: .7;
   margin-top: 40px;
+  text-align: right;
+
+  @media screen and (max-width: 800px) {
+    height: auto;
+    text-align: left;
+  }
 }
 
 .content {
@@ -82,6 +106,14 @@ header {
   position: relative;
   margin: 5% 18% auto 18%;
   z-index: 1;
+
+  @media screen and (max-width: 1000px) {
+    margin: 5% 10% auto 10%;
+  }
+
+  @media screen and (max-width: 800px) {
+    grid-template-columns: 1fr;
+  }
 }
 
 ul {
@@ -89,6 +121,10 @@ ul {
   list-style-type: none;
   padding: 40px 20px 40px 70px;
   margin: 0;
+
+  @media screen and (max-width: 800px) {
+    padding: 20px 20px 20px 65px;
+  }
 
   label {
     display: flex;
@@ -171,8 +207,8 @@ aside {
   color: $light-white;
   font-size: 14px;
   font-style: italic;
-  opacity: .8;
-  padding: 5px 0 5px 20px;
+  opacity: .7;
+  padding: 10px 0 5px 20px;
   text-align: right;
   text-transform: lowercase;
 }
