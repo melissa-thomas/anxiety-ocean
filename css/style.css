@@ -8,6 +8,18 @@ body {
   font-weight: 400;
   overflow: scroll; }
 
+footer {
+  color: white;
+  font-size: 14px;
+  margin-top: 15px;
+  opacity: 1;
+  text-align: left; }
+
+a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none; }
+
 h1 {
   color: white;
   font-family: "Varela Round", sans-serif;
