@@ -4,16 +4,14 @@ html, body {
 body {
   background: #fff;
   color: #222;
-  font-family: "Varela Round", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 400;
   overflow: scroll; }
 
 footer {
   color: white;
   font-size: 14px;
-  margin-top: 15px;
-  opacity: 1;
-  text-align: left; }
+  margin-top: 10px; }
 
 a {
   color: white;
@@ -22,7 +20,7 @@ a {
 
 h1 {
   color: white;
-  font-family: "Varela Round", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 40px;
   line-height: 1.2;
   padding: 20px;
@@ -39,7 +37,7 @@ h1 {
 h2 {
   background: #fff;
   box-shadow: 0px 0px 89px -12px rgba(0, 0, 0, 0.75);
-  font-family: "Varela Round", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 20px;
   opacity: .6;
   padding: 10px 20px 10px 65px;
@@ -66,7 +64,7 @@ h2 {
 .is-bold {
   font-weight: bold; }
   .is-bold:first-of-type {
-    margin-bottom: 8px; }
+    margin-bottom: 4px; }
 
 #beachVideo {
   position: fixed;
